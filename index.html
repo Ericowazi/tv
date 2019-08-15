@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TV</title>
+
+    <style>
+        body{
+            background: url("img/1tv.jpg");
+            padding: 0;
+            margin: 0;
+        }
+        .house {
+            background-image: url("img/1tv.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            padding: 0;
+            margin: 50px 0 0 0;
+            position: relative;
+            height: 700px;
+            width: 100%;
+        } 
+        .tv img {
+            position: absolute;
+            z-index: 1;
+            left: 29%;
+            top: -2%;
+            width: 40%;
+        }
+        .search {
+            display: grid;
+            place-items: center;
+            background-image: url("img/3ricee.gif");
+            position: absolute;
+            z-index: 2;
+            left: 35%;
+            top: 4%;
+            width: 29%;
+            height: 260px;
+        }
+        .search h1 {
+            color: #ffff;
+            text-shadow: 2px 1px #333;
+            animation: rice .5s linear infinite;
+        }
+        @keyframes rice {
+            0% {
+                height: 0;
+                margin-left: 3%;
+            }
+            50% {
+                height: 30px;
+                margin-left: 7%;
+            }
+            80% {
+                height: 0;
+            }
+        }
+
+        @media (max-width: 1024px) { 
+            .tv img {
+                left: 29%;
+                top: 6%;
+                width: 40%;
+            }
+            .search {
+                left: 35%;
+                top: 10%;
+                width: 29%;
+                height: 200px;
+            }
+        }
+
+        @media (max-width: 800px) { 
+            .tv img {
+                left: 23%;
+                top: 6%;
+                width: 50%;
+            }
+            .search {
+                left: 35%;
+                top: 10%;
+                width: 32%;
+                height: 190px;
+            }
+        }
+
+        @media (max-width: 426px) { 
+            .tv img {
+                left: 1%;
+                top: 6%;
+                width: 90%;
+            }
+            .search {
+                left: 12%;
+                top: 10%;
+                width: 68%;
+                height: 180px;
+            }
+        }
+        @media (max-width: 377px) {
+            .tv img {
+                left: 0%;
+                top: 12%;
+                width: 90%;
+            }
+            .search {
+                left: 12%;
+                top: 15%;
+                width: 68%;
+                height: 160px;
+            }
+        }
+        @media (max-width: 321px) {
+            .tv img {
+                left: 0%;
+                top: 15%;
+                width: 90%;
+            }
+            .search {
+                left: 12%;
+                top: 18%;
+                width: 68%;
+                height: 140px;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <div class="house">
+        <div class="tv">
+            <img src="img/tiv.png" alt="">
+        </div>
+        <div class="search">
+            <h1>NEOMORAN</h1>
+        </div>
+    </div>
+</body>
+</html>
